@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Planterra</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+    <header>
+     <div class="header_top">
+       <p>Boutique de plantes en ligne </p>
+     </div>
+    <div class="header_bottom">
+        <div class="header_bottom_left">
+          <ul>
+           <li><a href="">Boutique</a></li>
+           <li><a href="">collection</a></li>
+           <li><a href="">Gallerie</a></li>
+          </ul>
+        </div>
+        <div class="header_bottom_centre">
+           <img class="logo" src="logo-removebg-preview.png" alt="">
+        </div>
+        <div class="header_bottom_right">
+           <div class="header_bottom_right_left">
+             <li><a href="">Pour les professionels</a></li> 
+           </div>
+           <div class="header_bottom_right_right">
+             <img class="search" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAC+0lEQVRoge2Zz08TQRTHP/UH3tSLhQjEIN7k5kEhil7VgyYWww8T/wQTf0Rignqj/gOevZiQhoO0xsSb4K8Yr+qdkxG8KBEstNbDvHFWWaSzM7Ot0k+yeZu2833vdffNzL6FFi2CkHEc3wGcAU4CfcABYLd89wWYB94Dz4AnwCdHf94ZBErAGlCr81gDisCJBsS7jl7UP6uDqwCzwFXgKJAFdsqRBY4B14A5+a0e9xg4mHLsvxgDliSQb8AksM9ifBbIA8ui8RUY8RzjptzG/JtTQKeDVhdQiOhNOEdXJ3fF4Q85d50gNFeAKiklMyaOqkAugP4QJpnhAPqAKmxdEzdDOQHGMTXTE8KBnp2mQohHyGBqpuRbfFCEl4Fu3+IxdKJmwhpw3KdwSUQnfYpuQl58zvgS7ECtwhXs1glXsuJzVc6t2Bbz2VlgB/ACWHQKzY4F4DVqV3DadnBcIoNiiw5BJUXfVqdsB8Yl0if2ZeJwkvNK7GEfYp9RRZdmfWjaxfeCD7GyiLX5ELNkl/j+bjsw7tZqBlZtB8QlsiR2j1ssidgr1vrWiktkXmxv4nCSc0jsR9uBcYm8EzuQOJzk9Iv9YDswLpFZsecTh5Mc7fOpD7F2zBbFeqvggN6irGFqxZkiahrM+xKsg3vis+BTtF9EV0h/G3/Et7jeyhfw95weRwaYFl+PQjjoQT1+1lCPo6G4JT4Wgf2hnIxgmg9DAfQvYpoP5wLo/8YEJplx/NxmGdSV0ElUUR2b4OhkdM10OWh1Y2oielSAUbcw62MYUzPLqKnZZp3JoqbYFUz7J9oP1smk0kbtwcxm2vEccB21pWlHbf/b5HwAuAE8/yPoKVRhjzYyGVAtmxnsXiuUgYeoDn2UjZIJ1nmMIwtcBh4Ab1FTaBm1uM0Db4D7EtTfnjhHaIJkfDHE+itcAS41MqikbJRMKlOzb/6rZHJsgWRSWTR9k0N1VLZOMs3a14oyjaqNSuSz7ZiOyz/HBcyVudPgWJzJkeLr7BYtgJ/57P8kvPwRcAAAAABJRU5ErkJggg==" style="width: 25px;">
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABmUlEQVRYhe2WzUrDQBSFv7pQxAoKWh9Bt6LoslbElWhbFV9DRSnqSrvyZ6ErfQp/36O6VWrxASpolUK1bVzMDYFI4ySZLIQcuARmzj3nJnPvEIgR4x8iBRSBe+BTogQcAMNRm68ANcDqEO9APkrzthhdAWmgT2IGuJa9FpAzbZ7CefNtD15BOG/AkMkCijhv/hduhbtvsoAHEU1rcDPCLZks4ENEkxrcfuHWdIS7NAtoavIAEn5ydAuoyHNSg2tznk0WcCnPdQ3uhivHCEaAV9TZFjx4O8KpokbXKHKoc7VQo5ZBNWUSmAXuZK8JZE2b21hG3XSdruKWcCLBIlD2MLejDCyYNE4Axy6TF2AU6JUYkzV7vw0c4oxkKJyI6Dewi9OMp6jmHAHOcJpvT7gWcBTWPCtCX8CcrOWBBr8/fQOn+eYlxwKWgpr34HzWTdfeNGoSqhI3wJSLsyW5FaA7SAFrIvBIsLNMAE+isdqJ5HUT2j8V5yLiFxZw4dLyhYqIjAdJFkzgjKZv1CV5IEQBg6JRD6ERI0a0+AG51oK4HStRGQAAAABJRU5ErkJggg==" style="width: 30px;">
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACXklEQVRoge2Zy27UMBSGvw5SFtAV3bQwsGb6CrDrC3DRqPsKWPVREHuQYFneBlhOK2ilDkiwgE1vaiWmLHwOE4LtJPakcYb5JCvWOD79/56c2ElggZMM2ATeASPgWNoI2JGxrDV1FRkC+8BlSfsMPGlJo5drwEumQt8D28AAuCFtIL99yJ33QuYmg5o4A7aAJc+5PeCpnKtmkmCIEXQK3K8x7wFTM48b0FWLjGlNbAXMfyZzP9HyDWCTaU30Aub3gI8SYxgjJOSP53kkxzfAJGD+BHgr/YeRWqLYxfw370XEWJcYo5koCuRIRCxHxFiWGEczURSIrgetx4mtkWTwLVwAJ8D1qxBSgVPMDsGKLyMrpGMCjJabrkGfkTty3MVkztYU13jVVhZnr6ApyMih55yrQjVEGfniGN9w9OtSJc5YjnddQXxGdJIrI69z/VeeOGVUiaNGgjLSl6MrI5mjX5cqcaKMlNXIc4zJsfRDqRKntEZ8HBC/j5oVA4yW/boTe8A58fuoWaH7sQtq7kZuycQfDYgK5SdG05pt0OVOr8WxY7wNvAXvMlJ2620D1WJdS+Y+IwsjDbKoEehQRmxkwC9pKb019+qyZaQvv3/DrKSpcAF8x2i7XRy0GUnxslKcl5fPSEqFrjh3wf9FRjpvRO/TKRv5Zy2Zmxqxofv+1cbkhLNGxeckfRI7J833ws4n16LY/LuskA83TTMBvkq/nx9wGUmx0BXrnctlJMVCV6wF3+WM/HULLhpJeQ1Ral1ac2OkczVS/PR2jOfzVmKckFtL8hlZoTsmwGj98ynuN/L7myAUKXckAAAAAElFTkSuQmCC" style="width: 25px;" >
+           </div>
+        </div>
+       
+    </div>
+    <hr>
+</header>
+<main>
+  <div class="main1">
+  <div class="main1_left">
+    <img  class="image1_left" src="photo9.jpg" alt="" >
+  </div>
+
+  <div class="main1_centre">
+    <h1>Planterra</h1>
+    <h5>Le Jardinage En Pots</h5>
+    <button>Découvrez nos produits</button>
+    
+  </div>
+  <div class="main1_right"> <img class="image1_right" src="photo8.jpg" alt="" ></div>
+</div>
+
+<div class="main2">
+  <div class="main2_top">
+  <h2>Amenez la nature dans vos intérieurs</h1>
+  </div>
+  <div class="main2_buttom">
+<div class="main2_buttom_left">
+  <div class="box_color">
+    <img class="image_box" src="istockphoto-1280154279-170667a.jpg" alt="">
+  </div>
+</div>
+<div class="main2_buttom_right">
+  <h3>Nous sommes une agence végétale 360° dont le but est de reconnecter le citadin à la nature, dans tous ses lieux de vie et avec style. Nous sommes paysagistes, designers, scénographes avec une mission : rendre nos espaces de vie plus agréables et plus productifs. Nous concevons des espaces green luxuriants, nous les réalisons et les entretenons. Et pour les plus pressés, il y a notre e-shop. Nous sommes disponibles à Paris, à Bordeaux et à Lyon.</h2>
+
+  <button>Voir Localisation</button>
+</div>
+</div>
+</div>
+<div class="main3">
+  
+  <div class="main3_top">
+    <h2>Découvrez nos services</h1>
+    </div>
+    <div class="main3_buttom">
+  <div class="main3_buttom_left">
+    <div class="box3_color">
+      <div class="dot">
+      <span class="dot2"> </span>
+      <span class="dot1"> </span>
+      </div>
+      <span class="dot3"> </span>
+     <img class="image3_box" src="shutterstock_1702858801.jpg" alt=""> 
+    
+    </div>
+  </div>
+  <div class="main3_buttom_right">
+<h3>Sélection des plantes les plus tendances du moment, rempotées par nos paysagistes dans des pots design et qualis. Livrées chez vous.</h3>  
+    <button>Voir nos produits</button>
+  </div>
+  </div>
+</div>
+ <div class="main4">
+  <div class="main4_left">
+    <h3>Pour vos événements éphémères ou de la location longue durée. Nous répondons rapidement à vos demandes les plus singulières.</h3>
+    <button >Louez vos plantes</button>
+  </div>
+  <div class="main4_right">
+    <div class="box4_image">
+      <img class="image41_box" src="istockphoto-1340206837-612x612.jpg" alt="">
+      <img class="image42_box" src="photo-1557865353-72c46b1f864f.avif" alt="">
+      </div> 
+    </div>
+  </div>
+  <div class="main5">
+    <div class="main5_left">
+      <div class="box5">
+        <div class="dot5"></div>
+        <img class="image_box5" src="lakeisha-bennett-WzP3YnV9T-U-unsplash.jpg" alt="">
+        </div> 
+      </div>
+    <div class="main5_right">
+      <h3>Pour vos événements éphémères ou de la location longue durée. Nous répondons rapidement à vos demandes les plus singulières.</h3>
+      <button> Voir plus </button>
+    </div>
+    </div>
+    <div class="fouter">
+      <div class="fouter_top">
+        <div class="fouter_top_left">
+        <li><h3><img src="4230561-care-ecology-plant_114991 1.png" alt="">Livraison en main propre directe <br>
+          et sans intérmédiaire.</h3></li>
+        <li><h3><img src="60instagramhighlighticons57_112079 2.png" alt="">Eco-responsable et durable. <br>
+          Produits green avec zero packaging.
+        </h3></li></div>
+        <div class="fouter_top_right">
+        <li><h3><img src="Vector.png" alt="">Satisfait ou remplacé sous 30 jours. <br> On s'y engage</h3></li>
+        <li><h3><img src="Vect.png" alt="">Vos plantes méritent le meilleur. <br> 6/7j nos experts terrain qualifiés <br> vous répondent</h3></li>
+      </div>
+      </div>
+
+      <div class="fouter_bottom">
+
+      </div>
+    </div>
+</div>
+
+</main>
+    </body>
+</html>
